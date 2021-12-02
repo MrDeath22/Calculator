@@ -57,7 +57,7 @@ function tapBtn() {
    if (key === '=') {
       switch (option) {
          case '+':
-            fNum = fNum + sNum;
+            fNum = (+fNum) + (+sNum);
             break;
          case '-':
             fNum = fNum - sNum;

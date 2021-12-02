@@ -1,0 +1,35 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin breakpoint-down ($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up ($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin center-absolute {
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+@mixin border {
+  border: 1px solid $cl-border;
+}
+
+@mixin tr-bg_cl {
+  transition: color 0.3s ease,
+  background 0.3s ease;
+}
+
+@mixin tr-trans {
+  transition: transform 0.3s ease;
+}

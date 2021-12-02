@@ -1,0 +1,110 @@
+html {
+   box-sizing: border-box;
+}
+ 
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+ 
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+ 
+a {
+   display: inline-block;
+   text-decoration: none;
+}
+ 
+span {
+   display: inline-block;
+}
+ 
+button {
+   border: none;
+   cursor: pointer;
+   background-color: transparent;
+}
+ 
+img {
+   max-width: 100%;
+   height: auto;
+}
+ 
+ul, ol {
+   list-style: none;
+}
+
+.bx {
+   position: relative;
+}
+ 
+.fulled-container {
+   width: 100%;
+   padding: 0 20px;
+}
+ 
+.container {
+   max-width: 1240px;
+   width: 100%;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.small-container {
+   max-width: 90%;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.center-absolute {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+ 
+.relative-p {
+   position: relative;
+}
+
+.bg {
+   position: absolute;
+   background-repeat: no-repeat;
+}
+
+*::before,
+*::after {
+   display: inline-block;
+   background-repeat: no-repeat;
+}
+
+
+    /* -------- FLEX -------- */
+
+
+/* .row {
+   display: flex;
+   flex-flow: row wrap;
+} */
+.center {
+   text-align: center;
+   justify-content: center;
+}
+.between {
+   justify-content: space-between;
+}
+.around {
+   justify-content: space-around;
+}
+.evenly {
+   justify-content: space-evenly;
+}
+.align-center {
+   align-items: center;
+}
